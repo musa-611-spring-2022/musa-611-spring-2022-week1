@@ -1,0 +1,97 @@
+body {
+  padding: 2rem;
+  display: grid;
+  grid-template-areas:
+    "top-left right"
+    "bottom-left right";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+#identity {
+  grid-area: top-left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-width: 0;
+  padding: 1rem;
+
+  width: 30rem;
+  height: fit-content;
+}
+
+#technology {
+  grid-area: bottom-left;
+
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-color: silver;
+  padding: 1rem;
+
+  width: 30rem;
+  height: fit-content;
+  text-align: center;
+}
+
+#interests-and-experiences {
+  grid-area: right;
+  margin: 0 auto;
+  width: 40rem;
+}
+
+h1 + .pronouns {
+  margin-top: -0.5rem;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.profiles {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.github-profile a {
+  padding-left: 1.5rem;
+  background-image: url('../images/github.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+.slack-profile a {
+  padding-left: 1.5rem;
+  background-image: url('../images/slack.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.operating-system,
+.web-browser {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.operating-system img,
+.web-browser img {
+  height: 100px;
+}
