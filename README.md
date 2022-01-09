@@ -1,4 +1,4 @@
-# MUSA 611 2022,  Week 1
+# MUSA 611 2022, Week 1
 
 ## Exercise
 
