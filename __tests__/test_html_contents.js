@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const introductionsDir = path.join(__dirname, '/../introductions');
+const introductionsDir = path.join(__dirname, '../introductions');
 const htmlFileNames = fs.readdirSync(introductionsDir).filter((fileName) => (
   (fileName.slice(-5) === '.html')
     && (fileName !== 'index.html')
@@ -29,7 +29,7 @@ htmlFileNames.forEach((fileName) => {
     });
 
     function describeProfileLink(className, urlPrefix) {
-      describe(className + ' link', () => {
+      describe(`${className} link`, () => {
         it('element should exist', async () => {
           const link = await page.$(`.profiles .${className} a`);
           expect(link).not.toBeNull();
@@ -38,7 +38,7 @@ htmlFileNames.forEach((fileName) => {
         it('should have an appropriate href URL', async () => {
           const link = await page.$(`.profiles .${className} a`);
           const href = link ? await link.evaluate((node) => node.href) : '';
-          expect(href).toMatch(new RegExp(urlPrefix + '.*', 'i'));
+          expect(href).toMatch(new RegExp(`${urlPrefix}.*`, 'i'));
         });
 
         it('should have some content inside', async () => {
@@ -53,7 +53,7 @@ htmlFileNames.forEach((fileName) => {
     describeProfileLink('slack-profile', 'https://musa509611.slack.com/team/');
 
     function describeTechnologyImage(className, altMapping) {
-      describe(className + ' image', () => {
+      describe(`${className} image`, () => {
         it('element should exist', async () => {
           const image = await page.$(`.${className} img`);
           expect(image).not.toBeNull();
@@ -77,12 +77,12 @@ htmlFileNames.forEach((fileName) => {
     }
 
     describeTechnologyImage('operating-system', {
-      'Windows': 'images/windows.png',
-      'MacOS': 'images/macos.png',
-      'Linux': 'images/linux.png',
-      'Android': 'images/android.png',
-      'iOS': 'images/ios.png',
-      'ChromeOS': 'images/chromeos.png',
+      Windows: 'images/windows.png',
+      MacOS: 'images/macos.png',
+      Linux: 'images/linux.png',
+      Android: 'images/android.png',
+      iOS: 'images/ios.png',
+      ChromeOS: 'images/chromeos.png',
     });
     describeTechnologyImage('web-browser', {
       'Google Chrome': 'images/chrome.png',
@@ -94,9 +94,9 @@ htmlFileNames.forEach((fileName) => {
 
     describe('interests-and-experiences section', () => {
       it('should have at least two paragraphs', async () => {
-        const paragraphs = await page.$$('#interests-and-experiences p')
-        expect(paragraphs.length).toBeGreaterThanOrEqual(2)
-      })
+        const paragraphs = await page.$$('#interests-and-experiences p');
+        expect(paragraphs.length).toBeGreaterThanOrEqual(2);
+      });
     });
   });
 });
