@@ -1,0 +1,4 @@
+*.pyc
+package-lock.json
+poetry.lock
+node_modules/
