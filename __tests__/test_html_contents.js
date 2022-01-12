@@ -36,7 +36,7 @@ htmlFileNames.forEach((fileName) => {
       expect(name).toBeTruthy();
     });
 
-    function describeProfileLink(className, urlPrefix) {
+    function describeProfileLink(className, urlPattern) {
       describe(`${className} link`, () => {
         it('element should exist', async () => {
           const link = await page.$(`.profiles .${className} a`);
@@ -46,7 +46,7 @@ htmlFileNames.forEach((fileName) => {
         it('should have an appropriate href URL', async () => {
           const link = await page.$(`.profiles .${className} a`);
           const href = link ? await link.evaluate((node) => node.href) : '';
-          expect(href).toMatch(new RegExp(`${urlPrefix}.*`, 'i'));
+          expect(href).toMatch(urlPattern);
         });
 
         it('should have some content inside', async () => {
@@ -57,8 +57,8 @@ htmlFileNames.forEach((fileName) => {
       });
     }
 
-    describeProfileLink('github-profile', 'https://www.github.com/');
-    describeProfileLink('slack-profile', 'https://musa6112022.slack.com/team/');
+    describeProfileLink('github-profile', /https:\/\/(?:www\.)?github.com\/.*/i);
+    describeProfileLink('slack-profile', /https:\/\/musa6112022\.slack\.com\/team\/.*/i);
 
     function describeTechnologyImage(className, altMapping) {
       describe(`${className} image`, () => {
