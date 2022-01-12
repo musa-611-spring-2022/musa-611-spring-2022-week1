@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <!-- 0. Update the title below. -->
-  <title>Introduction: Alex Nelms</title>
+  <title>Introduction: Alexander Nelms</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -15,15 +15,17 @@
 <body>
   <header id="identity">
     <!-- 1. Create an h1 element containing your preferred name. -->
-
+    <h1>Alex Nelms</h1>
+    
     <!-- 2. (optional) Create a paragraph (p) element, set the class
             attribute to "pronouns", and add your preferred pronouns inside of
             the element. -->
+    <p class="pronouns">He/Him</p>
 
     <!-- 3. Fill in the links to your GitHub and Slack profiles below. -->
     <ul class="profiles">
-      <li class="github-profile"><a href=""></a></li>
-      <li class="slack-profile"><a href=""></a></li>
+      <li class="github-profile"><a href="https://github.com/nelmsal"></a></li>
+      <li class="slack-profile"><a href="https://musa6112022.slack.com/team/U02TBKJ4XUP"></a></li>
     </ul>
   </header>
 
@@ -40,8 +42,8 @@
          the page shows your town clearly (you can zoom the map out with lower
          values and zoom the map in with higher values). -->
     <script>
-      var homeTownCenter = [0, 0];
-      var homeTownZoomLevel = 18;
+      var homeTownCenter = [34.6995788,-118.4119711];
+      var homeTownZoomLevel = 12;
     </script>
   </section>
 
@@ -61,6 +63,7 @@
            * Android    images/android.png
            * iOS        images/ios.png
            * ChromeOS   images/chromeos.png                                 -->
+      <img alt="Windows" src="images/windows.png"></img>
     </div>
 
     <div class="web-browser">
@@ -75,11 +78,19 @@
            * Mozilla Firefox     images/firefox.png
            * Microsoft Edge      images/edge.png
            * Microsoft Exlorer   images/exlorer.png                         -->
+      <img alt="Google Chrome" src="images/chrome.png"></img>
     </div>
   </section>
 
   <section id="interests-and-experiences">
     <h2>My Interests and Experiences</h2>
+
+    <p>
+      * Bachelors in Geography w/ GIS & City Planning from UC Berkeley
+      * Learned Python GIS & Web Mapping to dodge intern grunt work
+      * Accidentally turned into 5-years of experience w/ City Planning Departments
+      * Some experience @ an automated vehicle start-up, a transporation research center, & a hut-centered pizza company 
+    </p>
 
     <!-- 7. Tell me briefly about your previous fields of study (undergraduate,
          graduate, or otherwise) and realms of experience (professional,
@@ -87,6 +98,8 @@
 
     <!-- 8. Tell me what you hope to learn in this course. Add a paragraph
          element (or two) below. -->
+    <p>I'd love to have a comfortable grip on creating and hosting webmaps. Learning anything to slight ESRI would be nice ¯\_(ツ)_/¯</p>
+
   </section>
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
