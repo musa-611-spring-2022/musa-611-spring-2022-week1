@@ -58,7 +58,7 @@ htmlFileNames.forEach((fileName) => {
     }
 
     describeProfileLink('github-profile', 'https://www.github.com/');
-    describeProfileLink('slack-profile', 'https://musa509611.slack.com/team/');
+    describeProfileLink('slack-profile', 'https://musa6112022.slack.com/team/');
 
     function describeTechnologyImage(className, altMapping) {
       describe(`${className} image`, () => {
