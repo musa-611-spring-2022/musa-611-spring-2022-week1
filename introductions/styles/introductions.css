@@ -1,11 +1,15 @@
 body {
+  margin: auto;
   padding: 2rem;
   display: grid;
   grid-template-areas:
     "top-left right"
+    "middle-left right"
     "bottom-left right";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
+  max-width: 80rem;
+  background-color: #f8f8f8;
 }
 
 #identity {
@@ -16,39 +20,61 @@ body {
   align-items: center;
 
   margin: 0 auto;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: black;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  border-bottom-width: 0;
+  border-bottom-color: silver;
+  border-bottom-width: 1px;
   padding: 1rem;
 
   width: 30rem;
   height: fit-content;
+  box-shadow: 1px 3px 3px grey;
+  background-color: white;
+}
+
+#home-town {
+  grid-area: middle-left;
+
+  margin: 0 auto;
+  border-width: 0 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 0;
+
+  width: 30rem;
+  height: fit-content;
+  box-shadow: 1px 3px 3px grey;
+  background-color: white;
 }
 
 #technology {
   grid-area: bottom-left;
 
   margin: 0 auto;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: black;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-top-color: silver;
+  border-top-width: 1px;
   padding: 1rem;
 
   width: 30rem;
   height: fit-content;
   text-align: center;
+  box-shadow: 1px 3px 3px grey;
+  background-color: white;
 }
 
 #interests-and-experiences {
   grid-area: right;
   margin: 0 auto;
-  width: 40rem;
+  padding-left: 1rem;
+  max-width: 40rem;
 }
 
 h1 + .pronouns {
@@ -64,6 +90,7 @@ h1 + .pronouns {
 }
 
 .github-profile a {
+  margin: 0.5rem;
   padding-left: 1.5rem;
   background-image: url('../images/github.png');
   background-repeat: no-repeat;
@@ -77,6 +104,10 @@ h1 + .pronouns {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
+}
+
+.map {
+  height: 12rem;
 }
 
 h2 {
