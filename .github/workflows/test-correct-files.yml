@@ -27,4 +27,4 @@ jobs:
       run: |
         ADDED_MODIFIED_FILES='${{ steps.files.outputs.added_modified }}' \
         REMOVED_FILES='${{ steps.files.outputs.removed }}' \
-        poetry run pytest
+        poetry run pytest --color=yes --code-highlight=yes

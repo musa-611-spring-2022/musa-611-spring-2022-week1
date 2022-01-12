@@ -19,4 +19,6 @@ jobs:
     - name: Install dependencies
       run: npm install --only=prod
     - name: Run jest
-      run: npx jest
+      run: |
+        npx http-server -p 8000
+        npx jest --color=true
