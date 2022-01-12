@@ -15,7 +15,7 @@ Your new HTML file should not literally be called {newfilename}.html. You should
 replace {newfilename} with your actual name.
 '''
 
-REMOVED_FILES = os.environ.get('REMOVED_FILES', 'htllo')
+REMOVED_FILES = os.environ.get('REMOVED_FILES', '')
 REMOVED_FILES_MESSAGE = '''
 Your PR should not remove any files from the repository. Please restore any
 removed files. For example, if I were working from the command line I would do
