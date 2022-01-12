@@ -20,5 +20,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
         poetry install --no-dev
+    - name: Determine changed files
+      id: files
+      uses: jitterbit/get-changed-files@v1
     - name: Run pytest
-      run: poetry run pytest
+      run: |
+        ADDED_MODIFIED_FILES='${{ steps.files.outputs.added_modified }}' \
+        REMOVED_FILES='${{ steps.files.outputs.removed }}' \
+        poetry run pytest
