@@ -10,6 +10,14 @@ const htmlFileNames = fs.readdirSync(introductionsDir).filter((fileName) => (
     && (fileName !== '_start.html')
 ));
 
+if (htmlFileNames.length === 0) {
+  describe('This test suite', () => {
+    it('is waiting for a new HTML file', () => {
+      expect(true);
+    });
+  });
+}
+
 htmlFileNames.forEach((fileName) => {
   describe(`Introduction document ${fileName}`, () => {
     beforeAll(async () => {
