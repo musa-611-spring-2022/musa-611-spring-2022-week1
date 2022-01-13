@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- 0. Update the title below. -->
+  <title>Introduction: Johnathan Clementi</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <link href="styles/introductions.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="identity">
+    <!-- 1. Create an h1 element containing your preferred name. -->
+    <h1>Johnathan Clementi</h1>
+
+    <!-- 2. (optional) Create a paragraph (p) element, set the class
+            attribute to "pronouns", and add your preferred pronouns inside of
+            the element. -->
+    <p class="pronouns">He/Him/His</p>
+
+    <!-- 3. Fill in the links to your GitHub and Slack profiles below. -->
+    <ul class="profiles">
+      <li class="github-profile"><a href="https://github.com/johnatawnclementawn">johnatawnclementawn</a></li>
+      <li class="slack-profile"><a href="https://musa6112022.slack.com/team/U02UG02SRL0">Johnathan Clementi</a></li>
+    </ul>
+  </header>
+
+  <section id="home-town">
+    <div id="home-town-map" class="map"></div>
+
+    <!-- 4. Below are two JavaScript variables. The first one is an array that
+         represents a latitude and longitude. Find the approximate latitude and
+         longitude of your home town (whatever that means to you) and replace
+         the values in the array.
+
+         The second variable is a zoom level. Once you have the latitude and
+         longitude of your home town, change the zoom level until the map on
+         the page shows your town clearly (you can zoom the map out with lower
+         values and zoom the map in with higher values). -->
+    <script>
+      var homeTownCenter = [40.08700262599706, -75.39573669433594];
+      var homeTownZoomLevel = 8;
+    </script>
+  </section>
+
+  <section id="technology">
+    <h2>My Tech Stack</h2>
+
+    <div class="operating-system">
+      <!-- 5. What operating system will you be using for class work? Create an
+           image (img) element below. Be sure to use `alt` and `src` attributes
+           according to your OS as follows:
+
+               alt              src
+            ~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~
+           * Windows    images/windows.png
+           * MacOS      images/macos.png
+           * Linux      images/linux.png
+           * Android    images/android.png
+           * iOS        images/ios.png
+           * ChromeOS   images/chromeos.png                                 -->
+      <img src="images/windows.png" alt="Windows">
+    </div>
+
+    <div class="web-browser">
+      <!-- 6. What web browser do you use most frequently? Create an image (img)
+           element below. Be sure to use `alt` and `src` attributes according to
+           your browser as follows:
+
+                   alt                  src
+            ~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~
+           * Google Chrome       images/chrome.png
+           * Apple Safari        images/safari.png
+           * Mozilla Firefox     images/firefox.png
+           * Microsoft Edge      images/edge.png
+           * Microsoft Exlorer   images/exlorer.png                         -->
+      <img src="images/firefox.png" alt="Mozilla Firefox">
+    </div>
+  </section>
+
+  <section id="interests-and-experiences">
+    <h2>My Interests and Experiences</h2>
+    <!-- 7. Tell me briefly about your previous fields of study (undergraduate,
+         graduate, or otherwise) and realms of experience (professional,
+         volunteer, or otherwise). Add a paragraph element (or two) below. -->
+    <p>
+      I studied environmental science and computer science at Marist College in Poughkeepsie, 
+      New York and graduated in 2018. Since then, I have worked for the planning and assessment 
+      officies in county government maintaining the parcel datasets and producing maps for various 
+      projects. I have also volunteered with the URISA GISCorps Disaster PhotoMappers, in which we
+      collect images and videos from social media in the immediate hours after a natural disaster and 
+      geolocate those images to provide agencies such as FEMA get a better idea of the damages. 
+    </p>
+   
+    <!-- 8. Tell me what you hope to learn in this course. Add a paragraph
+         element (or two) below. -->
+    <h2>My Hopes for this Course</h2>
+    <p>
+      I am most excited to increase my depth of experience with web development. In my previous
+      coursework, we have focused largely on getting the webpage up and running, rather than the 
+      beautification of a webpage. Additionally, I am looking forward to utilizing geospatial data
+      and mapping techniques, as those areas were also not the focus of my previous coursework.      
+    </p>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="scripts/introductions.js"></script>
+</body>
+</html>
