@@ -6,7 +6,7 @@
 
 * Sign up for [Code Academy](https://www.codecademy.com/)
 * Complete Units 1 through 4 in the Course Academy
-[Introductory Javascript coursework](https://www.codecademy.com/learn/introduction-to-javascript)
+  [Introductory Javascript coursework](https://www.codecademy.com/learn/introduction-to-javascript)
   - Introduction (variables)
   - Responding to conditions (conditionals)
   - Functions (defining behaviors that take some input and maybe return a result)
@@ -15,7 +15,7 @@
 > NOTE: All materials in this course are free by design. Any 'pro' sections
 > in code academy are not assigned
 
-### Slack
+- [x] ### Slack
 
 * [Join](https://join.slack.com/t/musa6112022/signup) the class slack organization. If you use your _upenn.edu_ (or _design.upenn.edu_) email address you should be able to get in. If you would like to use a different address (or don't have a design.upenn.edu address) please email me at mjumbe@design.upenn.edu and I will send an invitation.
 * Under your settings (top-right corner), go to **Edit profile** and include _at least_ your preferred name, and an image of you.
@@ -23,7 +23,7 @@
 
 ## Exercise
 
-### Tools
+- [x] ### Tools
 
 * A GitHub account
 * A git client (e.g., the [`git` CLI](https://git-scm.com/downloads), or [GitHub Desktop](https://desktop.github.com/))
