@@ -57,7 +57,7 @@ htmlFileNames.forEach((fileName) => {
       });
     }
 
-    describeProfileLink('github-profile', /https:\/\/(?:www\.)?github\.com\/.*i);
+    describeProfileLink('github-profile', /https:\/\/(?:www\.)?github.com\/.*i);
     describeProfileLink('slack-profile', /https:\/\/musa6112022\.slack\.com\/team\/.*i);
 
     function describeTechnologyImage(className, altMapping) {
