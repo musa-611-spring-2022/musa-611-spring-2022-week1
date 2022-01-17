@@ -98,6 +98,7 @@ htmlFileNames.forEach((fileName) => {
       'Mozilla Firefox': 'images/firefox.png',
       'Microsoft Edge': 'images/edge.png',
       'Microsoft Exlorer': 'images/exlorer.png',
+      'Opera': 'images/opera.png,'
     });
 
     describe('interests-and-experiences section', () => {
