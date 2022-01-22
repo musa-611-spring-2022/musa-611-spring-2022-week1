@@ -77,7 +77,7 @@ body {
   max-width: 40rem;
 }
 
-h2 + .pronouns {
+h1 + .pronouns {
   margin-top: -0.5rem;
   opacity: 0.5;
   font-style: italic;
